@@ -9,6 +9,9 @@ chrome.extension.sendMessage({}, function(response) {
 
 			// [...bookmarksList].map((bookmarksList,i) => {
 
+
+			    // const link = bookmarksList.querySelector('.bookmark_title');
+
 			// 	  bookmarksList.querySelector('.edit').remove();
 			// 	  bookmarksList.querySelector('.delete_link').remove();
 
@@ -18,8 +21,14 @@ chrome.extension.sendMessage({}, function(response) {
 			// 			}
 			// 	 })
 
+
+			// allLinks.push(link.getAttribute('href'));
+
+
 			//   });	
 
+
+			const allLinks = {};
 
 			  [...bookmarksList].map((bookmarksList,i) => {
 
@@ -28,7 +37,14 @@ chrome.extension.sendMessage({}, function(response) {
 			    bookmarksList.querySelector('.display').innerHTML = "";
 			    bookmarksList.querySelector('.display').append(link)
 				bookmarksList.querySelector('.display').append(tags)
+				
+				allLinks.push(link.getAttribute('href'));
+
+
 			});	
+
+
+			console.log(allLinks);
 
 
 
