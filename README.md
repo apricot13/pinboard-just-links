@@ -1,0 +1,2 @@
+# Toggle extra information on pinboard links
+I use [LinkClump](https://chrome.google.com/webstore/detail/linkclump/lfpjkncokllnfokkgpkobnkbkmelfefj?hl=en) to open multiple links but it wont work with additional links showing on pinboard. This extension hides the additional text on the page on pinboard so you can quickly open multiple links!

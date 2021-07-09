@@ -1,0 +1,16 @@
+#bookmarks .bookmark {
+    margin-bottom: 5px !important;
+}
+
+#bookmarks > div:last-of-type {
+    margin-top: 5em !important;
+}
+
+#bookmarks .bookmark .display {
+    width: 100%;
+}
+
+#bookmarks .bookmark .bookmark_title {
+    width: 100% !important;
+    display: inline-block !important;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Pinboard: Only show links",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Hides extra information on pinboard links so you just get a list of links",
+  "permissions": [
+    "https://*.pinboard.in/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.pinboard.in/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "css": [
+        "inject.css"
+      ]
+    }
+  ]
+}
